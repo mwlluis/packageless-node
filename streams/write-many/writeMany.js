@@ -23,9 +23,9 @@ const fs = require("fs/promises");
         return stream.end(buff);
       }
       if (!stream.write(buff)) {
-        i++;
         break;
       }
+      i++;
     }
   };
 
